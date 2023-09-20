@@ -22,9 +22,9 @@ export default function navbar() {
                 >Geronimo Gambuli</motion.h1>
             </picture>
             <ul className="ul">
-                <li><a className="li" href="#">Home</a></li>
+                <li><a className="li" href="#">About</a></li>
                 <li><a className="li" href="#proyectos" >Proyectos</a></li>
-                <li><a className="li" href="#contacto" >Contacto</a></li>
+                <li><a className="li" href="#contacto" >Skills</a></li>
             </ul>
         </div>
     </header>

@@ -4,9 +4,8 @@ import { motion } from 'framer-motion'
 
 function SobreMi() {
 
-
   const copiar = () => {
-    // navigator.clipboard.writeText(input.value);
+  
     Toastify( {
       text: "Mail copiado correctamente!",
       duration: 2000,
@@ -33,11 +32,10 @@ function SobreMi() {
             layout
              >Full Stack Developer</motion.span>
         </motion.p>
-        {/* <img className="icon-code" src="../../img/code-box-svgrepo-com.png" width="300" height="300" alt=""/> */}
         <div className="containerSobremi">
             <h2 className="title-Sobremi">Sobre Mi</h2>
             <div className="parrafoSobremi">
-                <p> Soy un desarrollador full stack apasionado por crear soluciones web. Con experiencia en tecnologías front-end y back-end, me encanta convertir ideas en código funcional. Si buscas un colaborador apasionado para tu proyecto, ¡estoy listo para ayudar! <span className='spanContact'>Contactame!</span>.
+                <p> Soy <span style={{color:'#646cff'}}>Desarrollador Full Stack</span> apasionado por crear soluciones web. Con experiencia en tecnologías front-end y back-end, me encanta convertir ideas en código funcional. Si buscas un colaborador apasionado para tu proyecto, ¡estoy listo para ayudar! <span className='spanContact'>Contactame!</span>.
                 </p>
             </div>
         </div>
@@ -49,11 +47,11 @@ function SobreMi() {
             <motion.a initial={{scale: 0}} animate={{scale: 1}} transition={{ease: 'easeInOut', delay: 1.6}} className="tw" target="_blank" href="https://twitter.com/GambuliGero8" rel="noreferrer"><i className="fa-brands fa-twitter"></i></motion.a>
         </div>
         <motion.div className="containerCV" whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
-            <a title="Descargar" download="Geronimo Gambuli CV" className="cv" href="../../cv/GeronimoGambuliCV.pdf">Descargar CV <i className="fa-solid fa-download"></i></a>
+            <a title="Descargar" download="Geronimo Gambuli CV" className="cv" href="../../../public/GeronimoGambuliCV.pdf">Descargar CV <i className="fa-solid fa-download"></i></a>
         </motion.div>
     </div>
     <picture className="div-img">
-        <img src="../../img/imgPersonal.png" className='image' alt="" />
+        <img src="../../../public/img/imgPersonal.png" className='image' alt="" />
 
     </picture>
 </div>

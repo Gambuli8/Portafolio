@@ -29,7 +29,7 @@
     display: grid;
     grid-template-columns: repeat(
         auto-fit,
-        minmax(400px, 1fr)
+        minmax(600px, 1fr)
     );
     align-content: center;
     align-items: center;
@@ -43,43 +43,85 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 400px;
-    height: 200px;
-    border: 1px solid #646cff;
+    height: 550px;
+    background-color: rgb(46, 44, 44);
+    border: 3px solid transparent;
+    border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    z-index: 1;
-}
-
-.p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    width: 100%;
-    height: 80px;
-    margin-top: 120px;
-    opacity: 90%;
-    background-color: rgb(27, 27, 27);
-    z-index: 2;
-    transition: all 1s;
+    z-index: 20;
+    transition: all .3s ease-in;
 }
 
 .proyect:hover{
-    transition: all 2s;
-    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 2);
+    border: 3px solid #646cff;
 }
 
-.proyect:hover .p{
-    transition:all .3s ease ;
-    transform: translateY(1.1)
-}
 .imgProyects{
     width: 400px;
     height: 200px;
     object-fit: cover;
-    /* border-radius: 20px; */
+    border-radius: 10px;
 }
+
+.h2Proyect{
+    font-family: 'Quicksand', sans-serif;
+    color: #ffda9e;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.h3Proyect{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #646cff;
+    text-transform: capitalize;
+}
+
+h5{
+    font-family:  'Raleway', sans-serif;
+}
+
+.pProyect{
+    font-family:  'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.year{
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
+}
+
+.icon-code{
+    padding-left: 450px;
+    padding-right: 0%;
+    margin-right: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(30deg);
+    opacity: 20%;
+    margin-top: -300px;
+    z-index: 20;
+    position: absolute;
+  }
+
+  .SkillsProyect{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+
+  }

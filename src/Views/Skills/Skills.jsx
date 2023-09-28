@@ -2,7 +2,7 @@ import  './Skills.css'
 
 export default function Skills() {
   return (
-    <section className='containerSkills'>
+    <section id='containerSkills'>
        <h1 className="h1Skills">Skills</h1>
        <section className="skills">
         <div className="skill">
@@ -19,9 +19,6 @@ export default function Skills() {
         </div>
         <div className="skill">
         <img src="../../../public/icons/icons8-react-40.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/astro-svgrepo-com.png" width={50} height={50} alt="" />
         </div>
         <div className="skill">
         <img src="../../../public/icons/icons8-vite-48.png" width={50} height={50} alt="" />

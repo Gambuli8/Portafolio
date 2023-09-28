@@ -24,7 +24,7 @@ export default function navbar() {
             <ul className="ul">
                 <li><a className="li" href="#">About</a></li>
                 <li><a className="li" href="#proyectos" >Proyectos</a></li>
-                <li><a className="li" href="#contacto" >Skills</a></li>
+                <li><a className="li" href="#containerSkills" >Skills</a></li>
             </ul>
         </div>
     </header>

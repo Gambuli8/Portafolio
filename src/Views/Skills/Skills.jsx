@@ -1,62 +1,17 @@
-import  './Skills.css'
+import './Skills.css'
+// import {HTML, GraphQL, JQuery, JavaScript, aws, bootstrap, cloudinary, css, express,firebase, framer,git,mySql, nodejs, postgreSQL,redux,tailwind,ReactJS,vite} from '../../Components/svgs/svgs'
+import svgs from '../../Components/svgs/svgs'
 
 export default function Skills() {
-  return (
-    <section id='containerSkills'>
-       <h1 className="h1Skills">Skills</h1>
-       <section className="skills">
-        <div className="skill">
-        <img src="../../../public/icons/icons8-html-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-css-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-js-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-nodejs-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-react-40.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-vite-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-redux-50.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-express-js-50.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-jquery-50.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-tailwindcss-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-bootstrap-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-sass-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-postgresql-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-my-sql-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-sql-60.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/icons8-firebase-48.png" width={50} height={50} alt="" />
-        </div>
-        <div className="skill">
-        <img src="../../../public/icons/sequelize-svgrepo-com.png" width={50} height={50} alt="" />
-        </div>
-       </section>
-    </section>
-  )
+    return (
+        <section
+            id='Skills'
+            className='flex flex-col items-start justify-start ml-24 mt-44'
+        >
+            <h1 className='text-[40px] text-[#ffda9e] mb-5 text-[Quicksand, sans-serif]'>Skills</h1>
+            <div className='flex items-center justify-center w-full h-auto'>
+                <div className='grid items-center justify-center grid-cols-3 gap-3'></div>
+            </div>
+        </section>
+    )
 }

@@ -1,195 +1,59 @@
 /* eslint-disable no-unused-vars */
 import './Proyectos.css'
+// import { BadgePurpe, BadgeGreen } from '../../Components/Badge/Badge'
 
 export default function Proyectos() {
-  return (
-    <section id="proyectos">
-         <img className="icon-code" src="../../../public/img/code-box-svgrepo-com.png" width="800" height="800" alt=""/>
-        <h1 className="h1">Proyectos</h1>
-        <div className="containerProyectos">
-            <div className="proyecto">
-                <article className="proyect">
-                    <img className="imgProyects" src="../../../public/img/img-CellXpress.png" alt=""/>
-                    <h2 className="h2Proyect"><b>CelXpress</b></h2>
-                    <h3 className='year'>2023</h3>
-                    <p className='pProyect'>un poco de descripcion del proyecto</p>
-                    <h3 className='h3Proyect'>tecnologias usadas</h3>
-                    <div className='SkillsProyect'>
-                    <div>
-                        <img src="../../../public/icons/icons8-html-48.png" width={20} height={20} alt="" />
-                    <h5>HTML</h5>
+    const proyectos = [
+        {
+            name: 'DEDALO Triatlón',
+            image: '/src/assets/img/dedalo.png',
+            description:
+                'Dédalo Triatlón, la aplicación perfecta para los amantes del triatlón, te sumerge en el emocionante mundo de la competición, conectando a atletas de todo el mundo. Con un diseño intuitivo y funcional, Dédalo Triatlón te ofrece la posibilidad de iniciar sesión para personalizar tu experiencia y acceder a funciones exclusivas.',
+            technology: ['JavaScript', 'ReactJs', 'HTML', 'TailwindCSS', 'AWS Amplify']
+        },
+        {
+            name: 'BackOffice Alimecon',
+            image: '/src/assets/img/Alimecon.png',
+            description:
+                'El backoffice de Alimecon brinda a los administradores un control total sobre los pedidos y el inventario. Desde la plataforma, los responsables pueden visualizar los pedidos de cada empleado de la empresa, accediendo a información sobre los platos solicitados. La herramienta permite configurar los horarios de realización de pedidos.',
+            technology: ['JavaScript', 'ReactJs', 'HTML', 'TailwindCSS', 'GraphQL', 'AWS Amplify']
+        },
+        {
+            name: 'CellXpress',
+            image: '/src/assets/img/img-CellXpress.png',
+            description:
+                'Inicia sesión para acceder a tu cuenta personalizada, donde podrás explorar un catálogo diverso de teléfonos, desde los últimos modelos hasta opciones más asequibles. Filtra tus búsquedas según tus preferencias, como marca, modelo y estado del dispositivo.',
+            technology: ['JavaScript', 'ReactJs', 'HTML', 'CSS', 'Redux', 'SQL']
+        },
+        { name: 'Weather App', image: '/src/assets/img/imgWeatherApp.png', description: 'fsdrgb', technology: ['JavaScript', 'ReactJs', 'HTML', 'CSS', 'Redux', 'SQL'] }
+    ]
+    return (
+        <section
+            id='proyectos'
+            className='mt-32 mb-10 ml-24 '
+        >
+            <h2 className='text-[#ffda9e] text-[40px] mb-10'>Proyectos</h2>
+            <div className='grid items-center justify-center grid-cols-2 ml-24'>
+                {proyectos.map(proyecto => (
+                    <div className='max-w-sm my-5 overflow-hidden border border-gray-300 rounded shadow-lg max-h-[550px]'>
+                        <img
+                            className='w-full'
+                            src={proyecto.image}
+                            alt='Sunset in the mountains'
+                        />
+                        <div className='px-6 py-4'>
+                            <div className='mb-2 text-xl font-bold'>{proyecto.name}</div>
+                            <p className='text-base text-gray-700'>{proyecto.description}.</p>
                         </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-css-48.png" width={20} height={20} alt="" />
-                    <h5>css</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-js-48.png" width={20} height={20} alt="" />
-                    <h5>javaScript</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-nodejs-48.png" width={20} height={20} alt="" />
-                    <h5>NodeJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-react-40.png" width={20} height={20} alt="" />
-                    <h5>ReactJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-redux-50.png" width={20} height={20} alt="" />
-                    <h5>Redux</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-express-js-50.png" width={20} height={20} alt="" />
-                    <h5>ExpressJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-vite-48.png" width={20} height={20} alt="" />
-                    <h5>Vite</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-firebase-48.png" width={20} height={20} alt="" />
-                    <h5>Firebase</h5>
-                    </div>
-                    <div>
-                    <img src="../../../public/icons/mongo-svgrepo-com.png" width={20} height={20} alt="" />
-                    <h5>Mongo DB</h5>
-                    </div>
-                    </div>
-                </article>
-                <article className="proyect">
-                    <img className="imgProyects" src="../../../public/img/imgFitConnect.png" alt=""/>
-                    <h2 className="h2Proyect"><b>FitConnect</b></h2>
-                    <h3 className='year'>2023</h3>
-                    <p className='pProyect'>un poco de descripcion del proyecto</p>
-                    <h3 className='h3Proyect'>tecnologias usadas</h3>
-                    <div className='SkillsProyect'>
-                        <div>
-                        <img src="../../../public/icons/icons8-html-48.png" width={20} height={20} alt="" />
-                    <h5>HTML</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-css-48.png" width={20} height={20} alt="" />
-                    <h5>css</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-js-48.png" width={20} height={20} alt="" />
-                    <h5>javaScript</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-nodejs-48.png" width={20} height={20} alt="" />
-                    <h5>NodeJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-react-40.png" width={20} height={20} alt="" />
-                    <h5>ReactJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-redux-50.png" width={20} height={20} alt="" />
-                    <h5>Redux</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-express-js-50.png" width={20} height={20} alt="" />
-                    <h5>ExpressJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-vite-48.png" width={20} height={20} alt="" />
-                    <h5>Vite</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-firebase-48.png" width={20} height={20} alt="" />
-                    <h5>Firebase</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-prisma-orm-48.png" width={20} height={20} alt="" />
-                    <h5>Prisma</h5>
+                        <div className='px-6 pt-3 pb-2 '>
+                            {proyecto.technology.map(tech => (
+                                // <span className='inline-block my-2 text-sm '>{BadgeGreen(`#${tech} `)}</span>
+                                <span class=' inline-block my-2 bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400'>#{tech}</span>
+                            ))}
                         </div>
                     </div>
-                </article>
-                <article className="proyect">
-                    <img className="imgProyects" src="../../../public/img/imgDrivers.png" alt=""/>
-                    <h2 className="h2Proyect"><b>Drivers</b></h2>
-                    <h3 className='year'>2023</h3>
-                    <p className='pProyect'>un poco de descripcion del proyecto</p>
-                    <h3 className='h3Proyect'>tecnologias usadas</h3>
-                    <div className='SkillsProyect'>
-                        <div>
-                    <img src="../../../public/icons/icons8-html-48.png" width={20} height={20} alt="" />
-                    <h5>HTML</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-css-48.png" width={20} height={20} alt="" />
-                    <h5>css</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-js-48.png" width={20} height={20} alt="" />
-                    <h5>javaScript</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-nodejs-48.png" width={20} height={20} alt="" />
-                    <h5>NodeJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-react-40.png" width={20} height={20} alt="" />
-                    <h5>ReactJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-redux-50.png" width={20} height={20} alt="" />
-                    <h5>Redux</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-express-js-50.png" width={20} height={20} alt="" />
-                    <h5>ExpressJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-sql-60.png" width={20} height={20} alt="" />
-                    <h5>SQL</h5>
-                        </div>
-                        <div> 
-                    <img src="../../../public/icons/icons8-postgresql-48.png" width={20} height={20} alt="" />
-                    <h5>PostgreSQL</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/sequelize-svgrepo-com.png" width={20} height={20} alt="" />
-                    <h5>Sequelize</h5>
-                        </div>
-                    </div>
-                </article>
-                <article className="proyect">
-                    <img className="imgProyects" src="../../../public/img/imgWeatherApp.png" alt=""/>
-                    <h2 className="h2Proyect"><b>Weather App</b></h2>
-                    <h3 className='year'>2023</h3>
-                    <p className='pProyect'>un poco de descripcion del proyecto</p>
-                    <h3 className='h3Proyect'>tecnologias usadas</h3>
-                    <div className='SkillsProyect'>
-                        <div>
-                    <img src="../../../public/icons/icons8-html-48.png" width={20} height={20} alt="" />
-                    <h5>HTML</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-css-48.png" width={20} height={20} alt="" />
-                    <h5>css</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-js-48.png" width={20} height={20} alt="" />
-                    <h5>javaScript</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-nodejs-48.png" width={20} height={20} alt="" />
-                    <h5>NodeJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-react-40.png" width={20} height={20} alt="" />
-                    <h5>ReactJs</h5>
-                        </div>
-                        <div>
-                    <img src="../../../public/icons/icons8-vite-48.png" width={20} height={20} alt="" />
-                    <h5>Vite</h5>
-                        </div>
-                    </div>
-                </article>
+                ))}
             </div>
-        </div>
-</section>
-  )
+        </section>
+    )
 }
